@@ -11,7 +11,6 @@ export default async function geminiAI_GenerateCourseLayout(prompt: string) {
   for await (const chunk of streamingResponse.stream) {
     const text = chunk.text();
     if (text) {
-      process.stdout.write(text);
       finalOutput += text;
     }
   }

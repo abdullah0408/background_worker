@@ -268,8 +268,6 @@ router.post("/", async (req: Request, res: Response) => {
       `✅ [SUCCESS] Course layout generated successfully for ID: ${courseId}`
     );
 
-    console.log(courseLayout);
-
     try {
       await prisma.course.update({
         where: { id: courseId },
