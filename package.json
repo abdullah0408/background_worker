@@ -1,0 +1,27 @@
+{
+  "name": "background_worker-",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rm -rf ./dist && tsc && node ./dist/src/index.js",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "prisma": "^6.4.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.22.0",
+    "@prisma/client": "^6.4.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
